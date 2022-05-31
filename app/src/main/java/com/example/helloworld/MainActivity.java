@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Uri gitPage=Uri.parse("https://github.com/Osama-Sultan189/Mobile-Computing");
                 Intent intent=new Intent(Intent.ACTION_VIEW,gitPage);
+                startActivity(intent);
             }
         });
     }

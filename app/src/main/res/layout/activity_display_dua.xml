@@ -4,26 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".learnActivity">
+    tools:context=".displayDua">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="570dp"
-        android:layout_height="876dp"
+        android:id="@+id/img"
+        android:layout_width="405dp"
+        android:layout_height="489dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginBottom="128dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background" />
-
-    <ListView
-        android:id="@+id/duaList"
-        android:layout_width="323dp"
-        android:layout_height="395dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="120dp"
-        android:cacheColorHint="#722680"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
