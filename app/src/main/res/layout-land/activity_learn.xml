@@ -18,12 +18,22 @@
 
     <ListView
         android:id="@+id/duaList"
-        android:layout_width="279dp"
-        android:layout_height="456dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="325dp"
+        android:layout_height="438dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="133dp"
         android:cacheColorHint="#000000"
         android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/here"
+        android:layout_width="187dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

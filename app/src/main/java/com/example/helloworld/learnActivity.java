@@ -8,15 +8,18 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class learnActivity extends AppCompatActivity {
-
+    TextView txt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
+        txt=findViewById(R.id.here);
         ArrayList<String> duaLists=new ArrayList<String>();
         duaLists.add("کھانے سے پہلے کی دعا");
         duaLists.add("کھانے کے بعد دعا");
@@ -33,7 +36,9 @@ public class learnActivity extends AppCompatActivity {
         dua.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent=new Intent(learnActivity.this,displayDua.class);
+               Intent intent=new Intent(learnActivity.this,displayDua.class);
+
+
                 intent.putExtra("position",position);
                 startActivity(intent);
             }
